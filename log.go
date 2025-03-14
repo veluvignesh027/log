@@ -85,3 +85,5 @@ func Warn(a ...any) {
 func Fatal(a ...any) {
 	GlobalLogger.Fatal(a...)
 }
+
+
