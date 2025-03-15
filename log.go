@@ -12,7 +12,7 @@ import (
 var GlobalLogger = NewLogger(DefaultConfig())
 
 func FormatTheLog(level string, a ...any) []any {
-	_, filename, lineno, ok := runtime.Caller(2)
+	_, filename, lineno, ok := runtime.Caller(4)
 	if !ok {
 		filename = ""
 		lineno = 0
